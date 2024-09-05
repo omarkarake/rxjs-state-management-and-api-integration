@@ -16,9 +16,6 @@ export class AppComponent implements OnInit {
     this.productService.init();
   }
   ngOnInit(): void {
-    this.productService.products$.subscribe((data) => {
-      console.log('Data initial in app component: ', data);
-    });
     this.cartService.cart$.subscribe((data) => {
       console.log('Data initial in cart: ', data);
     });

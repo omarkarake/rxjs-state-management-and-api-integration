@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../model/product.model';
 import { ProductService } from '../services/product/product-service.service';
 import { CartService } from '../services/cart/cart.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-list',
@@ -9,7 +10,9 @@ import { CartService } from '../services/cart/cart.service';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  products: Product[] = [];
+  // products: Product[] = [];
+  products$: Observable<Product[]> = this.productService.productSubject.asObservable();
+
 
   constructor(
     private productService: ProductService,
@@ -18,8 +21,11 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     // Subscribe to the products observable and assign the data
-    this.productService.products$.subscribe((data) => {
-      this.products = data;
+    // this.productService.products$.subscribe((data) => {
+    //   this.products = data;
+    // });
+    this.products$.subscribe((data) => {
+      console.log('Data initial in app component: ', data);
     });
   }
 

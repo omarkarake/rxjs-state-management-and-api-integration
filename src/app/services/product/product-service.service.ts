@@ -8,16 +8,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductService {
   productUrl: string = 'assets/data.json';
-  private productSubject = new BehaviorSubject<Product[]>([]);
-  products$: Observable<Product[]> = this.productSubject.asObservable();
+  productSubject = new BehaviorSubject<Product[]>([]);
 
   constructor(private http: HttpClient) {}
 
   init(): void {
-    this.getDesserts(); // Calls the API
+    this.getProducts(); // Calls the API
   }
 
-  getDesserts() {
+  getProducts() {
     this.http
       .get<Product[]>(this.productUrl)
       .pipe(
