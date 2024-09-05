@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductServiceService } from './services/product-service.service';
+import { ProductService } from './services/product/product-service.service';
+import { CartService } from './services/cart/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +9,18 @@ import { ProductServiceService } from './services/product-service.service';
 })
 export class AppComponent implements OnInit {
   title = 'rxjs-state-management-and-api-integration';
-  constructor(private productService: ProductServiceService) {
+  constructor(
+    private productService: ProductService,
+    private cartService: CartService
+  ) {
     this.productService.init();
   }
   ngOnInit(): void {
     this.productService.products$.subscribe((data) => {
       console.log('Data initial in app component: ', data);
+    });
+    this.cartService.cart$.subscribe((data) => {
+      console.log('Data initial in cart: ', data);
     });
   }
 }
