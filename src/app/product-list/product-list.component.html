@@ -1,0 +1,24 @@
+<div *ngIf="products.length > 0; else noProducts" class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4 text-center">Product List</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div *ngFor="let product of products" class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 h-full">
+        <img [src]="product.images[0]" alt="{{ product.name }}" class="w-full h-48 object-cover" />
+        <div class="p-4 flex-grow">
+          <h3 class="text-lg font-semibold">{{ product.name }}</h3>
+          <p class="text-sm text-gray-600 truncate-description">
+            {{ product.description }}
+          </p>
+        </div>
+        <div class="p-4 mt-auto">
+          <button (click)="addToCart(product)" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noProducts>
+    <p class="text-center text-lg font-semibold text-gray-500">No products available.</p>
+  </ng-template>
+  

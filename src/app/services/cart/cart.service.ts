@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 import { Product } from '../../model/product.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class CartService {
   // Private BehaviorSubject to hold the current cart state
   private cartSubject = new BehaviorSubject<Product[]>([]);
