@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "images": [
+        "https://media.wired.com/photos/5f52a44bb555bc55dbcdf5a8/master/pass/Gear-Wireless-Bluetooth-1226031847.jpg",
+        "https://cdn.thewirecutter.com/wp-content/media/2022/11/wirelessearbuds-2048px-8829.jpg?auto=webp&quality=75&width=1024"
+      ],
+      "description": "High-quality wireless headphones with noise cancellation and superior sound performance."
+    },
+    {
+      "id": 2,
+      "name": "Smartphone 6.5-Inch Display",
+      "images": [
+        "https://image.made-in-china.com/202f0j00tuTcnMbaZjoJ/Best-Mobile-Phone-6-5-Inch-Smart-Phone-Punch-Hole-Display-T610-Touch-Screen-Phone-Custom-Logo.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYtl90sy63i83W2YAocI60tkK9_Dsort7eQ&s"
+      ],
+      "description": "A sleek smartphone with a 6.5-inch display, dual cameras, and a long-lasting battery."
+    },
+    {
+      "id": 3,
+      "name": "Fitness Tracker Smartwatch",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjamUdAjH6V7fG7RuBhVe4n2x7pSo8D28r-A&s",
+        "https://www.theverge.com/22985108/best-fitness-tracker"
+      ],
+      "description": "Track your health and fitness with this waterproof smartwatch featuring heart rate monitoring."
+    },
+    {
+      "id": 4,
+      "name": "Portable Bluetooth Speaker",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy_jftCTF2q5vGhmpU1Rt47jzRGr9VMx8qgA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__XP5-QxdzLk6kJ7Jy5crCBzQL-eOFvMUjA&s"
+      ],
+      "description": "Compact yet powerful Bluetooth speaker with 360-degree sound and waterproof design."
+    },
+    {
+      "id": 5,
+      "name": "4K Ultra HD Smart TV",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsk-_AHudPMGsXLNkafl4wTnNQEesjU7yw0g&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlyeBm-HZh0dvd_NaHj5lLrA1s_3ic_dNgg&s"
+      ],
+      "description": "Enjoy your favorite movies and shows in stunning 4K resolution with built-in streaming apps."
+    },
+    {
+      "id": 6,
+      "name": "Gaming Laptop with RGB Keyboard",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvB_O4UdlAeBRHm4Cqd7gmrK2P8eQlZNaaVg&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsyIZ5MFMN-o7Cm_ShBiYw1S_EOqcOByvjg&s"
+      ],
+      "description": "A high-performance gaming laptop with an RGB backlit keyboard and powerful graphics card."
+    },
+    {
+      "id": 7,
+      "name": "Noise-Cancelling Earbuds",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQflWXZVwCnJIm-E7ilDudTNPLHnt4EUMWoWA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOSvuzIiD_2yMhPtNkWk8dbdNQiN9GIPCQ_Q&s"
+      ],
+      "description": "Compact earbuds with active noise-cancellation, perfect for travel and commuting."
+    },
+    {
+      "id": 8,
+      "name": "Smart Home Security Camera",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOly23FCsxKlbBFzTQFstodB0a6Q8MpwSzw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXTO1hewx5mnvcOFkWNn1s1mxY4BMFjEtmg&s"
+      ],
+      "description": "Monitor your home remotely with this smart security camera offering night vision and two-way audio."
+    },
+    {
+      "id": 9,
+      "name": "Cordless Vacuum Cleaner",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2p38DGyypOU7qmo625i5S-c3FqoXsIgAHzQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPC9GpawSYBUKhowPjI0crtVCvx0c4inR2lg&s"
+      ],
+      "description": "Lightweight cordless vacuum with powerful suction for cleaning carpets and hard floors."
+    },
+    {
+      "id": 10,
+      "name": "Electric Standing Desk",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQt--fCDpWM3hGv_n9lR9bGdqIv9nGE6a-qw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BNMzFhyvehQ1lc1PiSCzuPOA2Y97IaTBPA&s"
+      ],
+      "description": "Adjustable standing desk with electric height adjustment for a healthier workspace."
+    }
+  ]
+  
