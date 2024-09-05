@@ -1,1 +1,32 @@
-<app-product-list></app-product-list>
+<div class="relative">
+  <!-- Shopping Cart Icon -->
+  <div class="cursor-pointer w-[100%] h-auto lg:px-12 lg:pt-4">
+    <div
+      (click)="toggleModal()"
+      class="bg-transparent w-[50px] h-[50px] flex justify-center items-center rounded-md relative border-[2px] border-gray-600 hover:bg-gray-400"
+    >
+      <img src="assets/shopping_cart.svg" alt="Shopping Cart" />
+      <p class="text-blue-800 font-bold absolute -top-0 right-1">{{ totalItems$ | async}}</p>
+    </div>
+  </div>
+  <app-product-list></app-product-list>
+
+  <!-- Modal for Cart -->
+  <div
+    *ngIf="isModalOpen"
+    class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50"
+  >
+    <div class="bg-white h-[500px] overflow-y-scroll w-full max-w-lg p-6 rounded-lg shadow-lg relative">
+      <!-- Close Button -->
+      <button
+        (click)="toggleModal()"
+        class="absolute top-2 right-2 text-gray-700 hover:text-red-600"
+      >
+        ✖
+      </button>
+
+      <!-- Cart Component -->
+      <app-cart></app-cart>
+    </div>
+  </div>
+</div>

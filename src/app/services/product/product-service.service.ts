@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductService {
   productUrl: string = 'assets/data.json';
   productSubject = new BehaviorSubject<Product[]>([]);
+  products$: Observable<Product[]> = this.productSubject.asObservable();
 
   constructor(private http: HttpClient) {}
 
